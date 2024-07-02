@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab4.Borovyk Olha.IO-12</title>
+</head>
+<body>
+    <h1>Lab4.Borovyk Olha.IO-12</h1>
+    <h2>Десктопна версія</h2>
+<img src="images/1.png" alt="Десктопна версія">
+<h3>Опис створення десктопної версії</h3>
+<pre><code>     /* Десктопна версія */
+    @media (min-width: 1200px) {
+        .container {
+            max-width: 1200px;
+        }
+        .task-table th, .stats-table th {
+            background-color: #ada6dd;
+        }
+    }</code></pre>    
+    <h2>Планшетна версія</h2>
+    <img src="images/2.png" alt="Планшетна версія">
+    <h3>Опис створення планшетної версії</h3>
+   
+        <pre><code>/* Планшетна версія */
+            @media (min-width: 768px) and (max-width: 1199px) {
+            .container {
+                max-width: 768px;
+            }
+            .task-table th, .stats-table th {
+                background-color: rgb(237, 122, 90);
+            }
+        }</code></pre>
+    
+    <h2>Мобільна версія</h2>
+<img src="images/3.png" alt="Мобільна версія">
+<h3>Опис створення мобільної версії</h3>
+<pre><code>/* Мобільна версія */
+    @media (max-width: 767px) {
+        .container {
+            max-width: 100%;
+            padding: 10px;
+        }
+        .task-table th, .stats-table th {
+            background-color: #9f6475;
+        }
+    }
+</code></pre>
+    <h1>Використання логічних операторів</h1>
+    <pre><code>@media (max-width: 767px) {
+        .container {
+            max-width: 100%;
+            padding: 10px;
+        }
+        .task-table th, .stats-table th {
+            background-color: #9f6475;
+        }
+    }   
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+        .container {
+            max-width: 768px;
+        }
+        .task-table th, .stats-table th {
+            background-color: rgb(237, 122, 90);
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .container {
+            max-width: 1200px;
+        }
+        .task-table th, .stats-table th {
+            background-color: #ada6dd;
+        }
+    }</code></pre>
+
+</body>
+</html>
